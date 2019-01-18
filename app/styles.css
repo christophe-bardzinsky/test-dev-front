@@ -4,3 +4,44 @@
   font-size: 24pt;
   color: #3f894a;
 }
+
+/* HEADER */
+header nav, #carousel {
+	width: 80%;
+	margin: auto;
+}
+
+
+/* NAVBAR */
+nav{
+	height: 70px;
+}
+nav #brand-logo{
+	position: absolute;
+	top: 5px;
+	left: 100px;
+}
+nav #picto-loupe{
+	transform:scaleX(-1);
+}
+#menu{
+	margin: auto;
+}
+#menu li a{
+	color: black;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+
+/* CAROUSEL */
+.carousel-indicators li{
+    background-color: transparent;
+  	border-radius: 50%;
+  	max-width: 12px;
+    margin: 0 3px;
+    height: 12px !important;
+}
+.carousel-indicators .active{
+    background-color: #fff;
+}
