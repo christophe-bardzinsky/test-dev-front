@@ -1,3 +1,14 @@
+@font-face {
+ font-family: "Rubik Bold";
+ src: url("source/fonts/Rubik-Bold.woff") format("woff"),
+      url("source/fonts/Rubik-Bold.woff2") format("woff2");     
+}
+@font-face {
+ font-family: "Zooja";
+ src: url("source/fonts/Zooja.woff") format("woff"),
+      url("source/fonts/Zooja.woff2") format("woff2");
+}
+
 .brunch {
   font-family: -apple-system, Sans-Serif;
   text-align: center;
@@ -21,20 +32,38 @@ nav #brand-logo{
 	top: 5px;
 	left: 100px;
 }
-nav #picto-loupe{
-	transform:scaleX(-1);
+nav #navbarCollapse{
+	margin-left: 370px;
 }
-#menu{
-	margin: auto;
+#menu-left{
+	margin-left: 105px;
 }
-#menu li a{
+#menu-left li a.nav-link{
 	color: black;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-family: "Rubik Bold";
+	margin-left: 20px;
+}
+#menu-right{
+	margin-right: 100px;
+}
+#menu-right a.nav-picto{
+	margin-left: 30px;
+}
+#menu-right #picto-loupe{
+	transform:scaleX(-1);
+	margin-left: 50px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	width: 60px;
 }
 
 
 /* CAROUSEL */
+#carousel .slider-image{
+	height: 100vh;
+	margin-bottom: 20px;
+}
 .carousel-indicators li{
     background-color: transparent;
   	border-radius: 50%;
@@ -44,4 +73,105 @@ nav #picto-loupe{
 }
 .carousel-indicators .active{
     background-color: #fff;
+}
+.carousel-caption{
+	bottom: 20% !important;
+}
+.carousel-indicators{
+	bottom: 15% !important;
+}
+.carousel-caption h2{
+	font-family: "Zooja";
+	font-size: 12rem;
+}
+.carousel-caption p{
+	margin-top: 80px;
+	display: inline-block;
+    max-width: 300px;
+}
+.carousel-caption img{
+	background-color: #34b8ab;
+    padding: 10px;
+    border-radius: 50%;
+}
+#carousel #picto-fleche{
+	position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+#carousel #picto-fleche img{
+	width: 30px;
+}
+#carousel #picto-marqueur-haut{
+	position: absolute;
+    bottom: 25%;
+    left: 30%;
+}
+#carousel #picto-marqueur-haut .picto-marqueur{
+	width: 50px;
+}
+#carousel #picto-marqueur-haut #picto-brochure{
+	width: 40px;
+	border-radius: 50%;
+	background-color: white;
+	/*margin-left: -50px;
+	margin-bottom: 20px;*/
+}
+#carousel #picto-marqueur-bas{
+	position: absolute;
+    bottom: 10%;
+    left: 20%;
+}
+#carousel #picto-marqueur-bas .picto-marqueur{
+	width: 50px;
+}
+#carousel #bloc-balades{
+	position: absolute;
+    bottom: 5%;
+    right: 20%;
+    background-color: white;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    z-index: 999;
+    text-align: center;
+}
+#carousel #bloc-balades #close-button{
+	position: relative;
+}
+#carousel #bloc-balades #close-button button{
+    position: absolute;
+    right: 20%;
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: 1rem;
+    font-weight: unset;
+    height: 25px;
+    width: 25px;
+}
+#carousel #bloc-balades #bloc-balades-content{
+	height: 100%;
+	margin-top: 20px;
+}
+#carousel #bloc-balades #bloc-balades-content i.fa-shoe-prints{
+	font-size: 30px;
+	color: #34b8ab;
+}
+#carousel #bloc-balades #bloc-balades-content #bloc-balades-title{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #34b8ab;
+	margin-bottom: 0;
+}
+#carousel #bloc-balades #bloc-balades-content #bloc-balades-desc{
+	font-weight: 500;
+}
+#carousel #bloc-balades #bloc-balades-content button{
+	text-transform: uppercase;
+	border-radius: 20px;
+	background-color: #34b8ab;
+	border: unset;
 }
